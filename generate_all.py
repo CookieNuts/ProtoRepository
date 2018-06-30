@@ -57,6 +57,6 @@ if __name__ == "__main__" :
 		cmd = generateCmd(rootPath)
 		execCmd(protoPath, allPrefix[languate]+allFilePath[languate])
 	else:
-		print("Error!")
+		print("Languate Select Error!")
 
 
