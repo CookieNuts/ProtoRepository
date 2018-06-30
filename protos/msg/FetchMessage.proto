@@ -1,0 +1,14 @@
+syntax = "proto3";
+option java_package = "com.cookienats.common.papimq.protos.msg";
+import "common/Result.proto";
+
+message FetchMessageRequest{
+	string topicName = 1;
+	string subscriberName = 2;
+}
+
+message FetchMessageResponse{
+	CommonResult result = 1;
+	string requestId	 = 2;
+	bytes message 		 = 3;	//二进制消息
+}

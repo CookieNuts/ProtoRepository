@@ -1,0 +1,7 @@
+syntax = "proto3";
+option java_package = "com.cookienats.common.papimq.protos.common";
+
+enum CommonResult {
+	SYSTEM_ERROR				= 0;	//通用系统错误
+	OK							= 1;	//通用成功
+}

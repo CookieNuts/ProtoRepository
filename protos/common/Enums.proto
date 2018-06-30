@@ -1,0 +1,7 @@
+syntax = "proto3";
+option java_package = "com.cookienats.common.papimq.protos.common";
+
+enum ConsumeResult{
+	CONSUME_FAIL = 0;		//消费失败
+	CONSUME_SUCCESS = 1;	//消费成功
+}

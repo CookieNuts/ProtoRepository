@@ -1,0 +1,15 @@
+syntax = "proto3";
+option java_package = "com.cookienats.common.papimq.protos.msg";
+import "common/Result.proto";
+import "common/Enums.proto";
+
+message ReportConsumeResultRequest{
+	string requestId	= 1;
+	string topicName  = 2;
+	string subscriberName = 3;
+	ConsumeResult consumeResult = 4;	//消息消费结果
+}
+
+message ReportConsumeResultResponse{
+	CommonResult result = 1;
+}
