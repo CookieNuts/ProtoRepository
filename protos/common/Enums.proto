@@ -5,3 +5,9 @@ enum ConsumeResult{
 	CONSUME_FAIL = 0;		//消费失败
 	CONSUME_SUCCESS = 1;	//消费成功
 }
+
+enum MsgId{
+	ENQUE_MESSAGE 	= 0;	//上游入队消息
+	FETCH_MESSAGE 	= 1;	//下游获取消息
+	REPORT_COMSUME 	= 2;	//下游汇报消费结果
+}

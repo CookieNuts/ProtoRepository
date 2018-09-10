@@ -4,4 +4,6 @@ option java_package = "com.cookienats.common.papimq.protos.common";
 enum CommonResult {
 	SYSTEM_ERROR				= 0;	//通用系统错误
 	OK							= 1;	//通用成功
+	CONNECT_TIME_OUT			= 2;	//请求超时
+	MESSAGE_EOF 				= 3;	//暂无消息可消费
 }

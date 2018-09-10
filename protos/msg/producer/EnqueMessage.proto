@@ -1,14 +1,13 @@
 syntax = "proto3";
-option java_package = "com.cookienats.common.papimq.protos.msg";
+option java_package = "com.cookienats.common.papimq.protos.msg.producer";
 import "common/Result.proto";
 
 message EnqueMessageRequest{
 	string topicName = 1;
-	string subscriberName = 2;
-	bytes message = 3;		//二进制消息
+	bytes message = 2;		//二进制消息
 }
 
 message EnqueMessageResponse{
 	CommonResult result = 1;
-	string requestId	 = 2;
+	int64 requestId	 = 2;
 }
